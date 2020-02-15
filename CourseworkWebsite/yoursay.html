@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Say</title>
+	<link rel="stylesheet" type="text/css" href="css/yoursay5.css"> <!--css ref-->
+	<script type="text/javascript" src="js/scriptSlide.js"></script> <!--imported js-->
+</head>
+<body>
+	<header id="main-header"> <!--header area-->
+		<div class="container">
+			<a href="index.html">
+				<img src="images/list-bullet.png" alt="image not loaded" width="90px" height="90px">
+				<h1>&nbspCoffee Time</h1>
+			</a>
+		</div>
+	</header>
+
+	<nav id="navbar"> <!--navigation bar-->
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="#">The Cafe</a>
+					<ul>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="yoursay.html">Your say</a></li>
+					</ul>
+				</li>
+
+				<li><a href="php/ourProducts.php">Our Products</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li id="loginbutton"><a href="#">Log in</a>
+					<ul id="logindropdown">
+					<li><a href="php/userLogin.php">User</a></li>
+					<li><a href="php/adminLogin.php">Admin</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="showcase"> <!--showcase area-->
+		<div class="container">
+			<h1>Your say</h1>
+			<p>It is important to us and we will act on it</p>
+		</div>
+	</section>
+
+	
+	<aside id="sidebar"> <!--sidebar-->
+		<div class="container">
+			<h3>Coffee Blog</h3>
+			<p>
+			Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today! Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment.
+			</p>
+		</div>
+	</aside>
+	
+	<div class="container">
+	<section id="main-area"> <!--main area-->
+		<form action="php/yoursay.php" method="post"> <!--questionaire form posts to yoursay.php to process-->
+			<h4>How satisfied are you with our service?</h4> <!--question header-->
+			<div id="formqs">
+			<label>Very Satisfied</label>
+			<input type="radio" name="question1" value="v.satisfied"> <!--value=posted string-->
+			<br>
+			<label>Satisfied</label>
+			<input type="radio" name="question1" value="satisfied"> <!--refer to choice in php by 'name'-->
+			<br>
+			<label>Neutral</label>
+			<input type="radio" name="question1" value="neutral">
+			<br>
+			<label>Unsatisfied</label>
+			<input type="radio" name="question1" value="unsatisfied">
+			<br>
+			<label>Very Unsatisfied</label>
+			<input type="radio" name="question1" value="v.unsatisfied">
+			<br>
+			</div>
+
+			<h4>Would you recommend our service to others?</h4> <!--question header-->
+			<div id="formqs">
+			<label>Definitely</label>
+			<input type="radio" name="question2" value="definitely"> <!--type radio with values assigned-->
+			<br>
+			<label>Probably</label>
+			<input type="radio" name="question2" value="probably">
+			<br>
+			<label>Not sure</label>
+			<input type="radio" name="question2" value="notsure">
+			<br>
+			<label>Probably not</label>
+			<input type="radio" name="question2" value="prob not">
+			<br>
+			<label>No</label>
+			<input type="radio" name="question2" value="no">
+			<br>
+			</div>
+
+			<h4>Would you return to our shop in the future?</h4> <!--question header-->
+			<div id="">
+			<select name="question3"><!--dropdown of possible answers-->
+				<option value="yes">Yes</option> <!--values assigned to options-->
+				<option value="no">No</option>
+			</select>
+			<br> <!--single line break-->
+			</div>
+
+			<h4>How does our coffee taste? (use the slider below)</h4> <!--question header-->
+			<div id="">
+			<label>Bad</label>
+			<input type="range" name="question4"> <!--range slider holds values of 0-100-->
+			<label>Good</label>
+			<br> <br>
+			</div>
+
+			<input type="submit" name="submit" value="Submit" id="button"><!--submit form button-->
+			<a href="php/yoursayResults.php"><button type="button" id="button">View Results</button></a>
+			<!--button links to yoursayResults.php-->
+		</form>
+	</section>
+	</div>
+
+	<footer id="footer"> <!--FOOTER-->
+		<h3 id="find">Find us at:</h3>
+		<iframe width="20%" height="275" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=bd7%203hr+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a>
+		</iframe> <!--google maps iframe-->
+		<div id="copyright">
+		<p><cite>Copyright &copy; 2019, Haris Shakil</cite></p>
+		</div>
+	</footer>
+</body>
+</html>

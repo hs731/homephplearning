@@ -1,0 +1,17 @@
+Full path to first page of website:
+lamp.scim.brad.ac.uk:50216/CourseworkWebsite/index.html
+
+User log-in:
+Username = jack
+Password = 123
+
+Admin log-in:
+Username = haris
+Password = password123
+
+Extra notes:
+In the event of a session permission denied error, ensure you have logged out of all other sites which aren’t the coursework website.
+
+To see the sketches and report, open the 'Sketches and report' document at the root of the CourseworkWebsite folder
+
+To view the exported mysql tables, go to the 'mysql tables' folder

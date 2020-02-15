@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!--html version instruction-->
+<html>
+<head>
+	<title>Coffee Time - Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/contactPage8.css">
+	<script src="js/contact-script2.js"></script>
+</head>
+<body>
+	<header id="main-header"> <!--header area-->
+		<div class="container">
+			<a href="index.html"> <!--clickable logo and site title redirects to home-->
+				<img src="images/list-bullet.png" alt="image not loaded" width="90px" height="90px">
+				<h1>&nbspCoffee Time</h1>
+			</a>
+		</div>
+	</header>
+
+	<nav id="navbar"> <!--navigation bar-->
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="#">The Cafe</a>
+					<ul>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="yoursay.html">Your say</a></li>
+					</ul>
+				</li>
+
+				<li><a href="php/ourProducts.php">Our Products</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li id="loginbutton"><a href="#">Log in</a>
+					<ul id="logindropdown">
+					<li><a href="php/userLogin.php">User</a></li>
+					<li><a href="php/adminLogin.php">Admin</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="showcase"> <!--showcase area-->
+		<div class="container">
+			<h1>Welcome</h1>
+			<p></p>
+		</div>
+	</section>
+
+	
+	<aside id="sidebar"> <!--sidebar-->
+		<div class="container">
+			<h3>Coffee Blog</h3>
+			<p>
+			Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!
+			</p>
+		</div>
+	</aside>
+	
+	<div class="container">
+	<section id="main-area"> <!--main area-->
+		<h1>Contact us</h1>
+		<ul> <!--unordered list of contact details-->
+			<li>Number: 02174 123456</li>
+			<li>Email (see below): coffeetime@gmail.com</li>
+			<li>Location: 508 Great Horton Rd, Bradford BD7 3HR</li>
+		</ul>
+		<br>
+		<div class="buttondiv">
+		<button id="mailto-button" onclick="revealForm()">Send via mailto</button> <!--exec js function-->
+		</div>
+		
+		<div class="formdiv">
+		<form id="mailto-form"> <!--mailto form-->
+			<label>Recipient email</label>
+			<input type="text" name="recipient" id="text" value="coffeetime@gmail.com" readonly=""> <!--non-editable recipient-->
+			<br>
+			<label>CC</label>
+			<input type="text" name="cc" id="text"> <!--text input-->
+			<br>
+			<label>Subject</label>
+			<input type="text" name="sub" id="text"> <!--text input-->
+			<br>
+			<center>
+			<br>
+			<label id="msglabel">Message:</label>
+			</center>
+			<textarea name="thebody" id="text"></textarea> <!--message area-->
+			<br><br>
+			<center>
+			<input type="submit" id="button"> <!--submit form-->
+			<input type="reset" id="button"> <!--clear form inputs-->
+			</center>
+		</form>
+		</div>
+		<div class="link">
+		<a id="mailto-link" href="#">Mailto Link<br>Generated Here</a> <!--will hold mailto link - initally empty-->
+		</div>
+		<script type="text/javascript"> //call javascript method to submit form
+			submitFormbetter()
+		</script>
+		
+	</section>
+
+	</div>
+
+	<footer id="footer"> <!--FOOTER-->
+		<h3 id="find">Find us at:</h3>
+		<iframe width="20%" height="275" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=bd7%203hr+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a>
+		</iframe> <!--google maps iframe and styling-->
+		<div id="copyright">
+		<p><cite>Copyright &copy; 2019, Haris Shakil</cite></p>
+		</div>
+	</footer>
+</body>
+</html>

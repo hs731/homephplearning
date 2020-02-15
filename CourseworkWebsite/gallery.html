@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/gallery11.css"> <!--css ref-->
+	<script type="text/javascript" src="js/scriptSlide.js"></script> <!--imported js-->
+</head>
+<body>
+	<header id="main-header"> <!--header area-->
+		<div class="container">
+			<a href="index.html">
+				<img src="images/list-bullet.png" alt="image not loaded" width="90px" height="90px">
+				<h1>&nbspCoffee Time</h1>
+			</a>
+		</div>
+	</header>
+
+	<nav id="navbar"> <!--navigation bar-->
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="#">The Cafe</a>
+					<ul>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="yoursay.html">Your say</a></li>
+					</ul>
+				</li>
+
+				<li><a href="php/ourProducts.php">Our Products</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li id="loginbutton"><a href="#">Log in</a>
+					<ul id="logindropdown">
+					<li><a href="php/userLogin.php">User</a></li>
+					<li><a href="php/adminLogin.php">Admin</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="showcase"> <!--showcase area-->
+		<div class="container">
+			<h1>The Gallery</h1>
+			<p>
+			Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!
+			</p>
+		</div>
+	</section>
+
+	
+	<aside id="sidebar"> <!--sidebar-->
+		<div class="container">
+			<h3>Coffee Blog</h3>
+			<p>
+			Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget.<br><br><br><br> Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today! Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. <br><br><br><br> Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today!<br><br><br><br> Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment.  Our staff ensure that your experience at Coffee Time is not one to forget. Delivering the best coffee is our commitment and you are important to us, so don't delay and visit Coffee Time today! Here at Coffee Time, we're dedicated to serving the tastiest and freshest coffee known to man. You will feel comfortable in our shop's welcoming environment. our shop's welcoming environment. <br><br><br><br> Here at Coffee Time, we're dedicated to serving coffee.
+			</p>
+		</div>
+	</aside>
+	
+	<div class="container">
+	<section id="main-area"> <!--main area-->
+		<div id="slideshow-full"> <!--div to style full slideshow area-->
+			<img src="gallerypics/slideshow/inside.jpg" id="slideshow1"> <!--slideshow photos with id-->
+			<img src="gallerypics/slideshow/outside.jpg" id="slideshow2">
+			<img src="gallerypics/slideshow/kitchen.jpg" id="slideshow3">
+			<img src="gallerypics/slideshow/lit.jpg" id="slideshow4">
+			<button id="back-button" onclick="decr()">Back</button> <!--buttons call js function to show photos-->
+			<button id="forward-button" onclick="incr()">Forward</button>
+		</div>
+
+		<div id="pourcoffee">
+		<div id="pourcoffee-desc"> <!--description-->
+			<h3>Our Origin</h3> <!--header-->
+			<p>The history of out coffee and it's recipe dates all the way back to the 15th century where Kaldi discovered coffee beans and it's usage when eating berries near an arabica tree. From that point Kaldi invented Coffee and opened the shop named Coffee Time. Now in 2019, we are still continuing his legacy with fair trade coffee beans.</p> <!--descriptive paragraph-->
+		</div>
+		<a href="http://www.fairtrade.org.uk/Farmers-and-Workers/Coffee"><img id="pourcoffee-photo" src="gallerypics/pourcoffee.gif"></a> <!--clickable gif-->
+		</div>
+		
+		<div id="quality">
+		<a href="https://coffeefaq.com/quality-of-coffee/"><img id="quality-photo" src="gallerypics/brewing.gif"> <!--clickable gif-->
+		<div id="quality-desc"></a> <!--description-->
+			<h3>Quality</h3>
+			<p>Through time we have maintained our coffee taste and made sure we never lost the quality of our great tasting coffee. Quality is important us at Coffee Time.</p>
+		</div>
+		</div>
+
+		<div id="values">
+		<div id="values-desc"> <!--description-->
+			<h3>Values</h3>
+			<ol>
+				<li>Taste<p>We ensure out coffee is the best tasting.</p></li>
+				<li>Texture<p>The smooth texture of our coffee is part of our great quality.</p></li>
+				<li>Flavour<p>Using the finest of coffee beans produces the best flavour possible.</p></li>
+				<li>Aesthetics<p>The appearance of our coffee is as important as the flavour.</p></li>
+			</ol>
+		</div>
+		<a href="http://www.ico.org/improving_quality.asp"><img id="values-photo" src="gallerypics/outside.gif"></a> <!--clickable gif-->
+		</div>
+	</section>
+	</div>
+
+	<footer id="footer"> <!--FOOTER-->
+		<h3 id="find">Find us at:</h3>
+		<iframe width="20%" height="275" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=bd7%203hr+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a>
+		</iframe> <!--google maps iframe with styling-->
+		<div id="copyright">
+		<p><cite>Copyright &copy; 2019, Haris Shakil</cite></p>
+		</div>
+	</footer>
+</body>
+</html>

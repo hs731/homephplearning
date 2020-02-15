@@ -1,0 +1,238 @@
+body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height:1.6em; /*space between line*/
+	margin:0;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden; /*no scroll bar when element accidentally leaves it's container*/
+}
+.container a{ /*rid of logo a tag styling*/
+	color: inherit;
+	text-decoration: none;
+}
+
+#main-header{
+	/*background-image: url(http://lamp.scim.brad.ac.uk:50216/CourseworkWebsite/images/main-header-bg.jpg);
+	background-repeat: none;
+	background-size: 8%;*/
+	background-color: #8B6742;
+	color: white;
+	font-family: Kristen ITC;
+	font-size: 25px;
+	letter-spacing: 0.4em;
+
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 8px;
+	border-style: solid;
+	border-color: #654321;
+}
+
+#main-header img{
+	float: left;
+}
+
+#navbar{
+	background-color: #D2691E;
+	color: white;
+}
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li{ /*individual lists*/
+	display: inline; /*horizontal display of navigation*/
+	font-family: Arial;
+	font-weight: bold;
+	padding: 5px;
+	border:4px #181818 solid; /*border for each list*/
+	margin-left: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#navbar a{ /*navbar text*/
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
+	/*padding-right: 15px;*/
+}
+
+#navbar a:hover{
+	color: brown;
+}
+
+/*drop down below*/
+#navbar ul li ul{ /*drop down*/
+	display: none;
+	padding: 10px; /*helped with some positioning*/
+	position: absolute;
+}
+
+#navbar ul li:hover ul{ /*hover list shows drop down of it's ul*/
+	display: block; /* display li in li on new line*/
+	z-index: 100;
+}
+
+#navbar ul li ul li{ /*drop down elements*/
+	display: block; /*drop down on new line*/
+	margin-left: 120px;
+	margin-top: 10px;
+	background-color: #D2691E;
+}
+
+
+#showcase{
+	background-image: url("../images/showcase-photos.png");
+	/*background-position: center right; mirror*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	min-height: 300px; /*adjust height to window size*/
+	margin-bottom: 30px;
+	/*text-align: center;*/
+	float: left;
+	width: 80%;
+	padding: 45px;
+	box-sizing: border-box;
+}
+
+#showcase h1{
+	color: brown;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 0.6em;
+	text-align: center;
+	margin-left: 400px;
+	-webkit-text-stroke-width: 1px; /*text outline*/
+   	-webkit-text-stroke-color: white;
+}
+/*to prevent the welcome looking funny:
+add the header to the actual picture
+*/
+
+#sidebar{
+	float: right;
+	width: 20%;
+	background: #333;
+	color: white;
+	padding: 28.5px;
+	box-sizing: border-box;
+}
+
+#main-area{
+	width: 90%;
+	text-align: center;
+	margin-left: 80px;
+}
+
+#footer{
+	background-color: #101010;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 112px;
+
+	position: relative;
+	bottom: 0px;
+}
+#copyright{
+	float: right;
+	margin-top: 100px;
+	margin-right: 300px;
+}
+#find{
+	font-style: italic;
+	margin-right: 500px;
+}
+
+#loginbutton{
+	float: right;
+	top: 105px;
+	right: 130px;
+	position: absolute;
+}
+
+#logindropdown{
+	padding: 1000px;
+	left: -135px;
+}
+
+/*FULL MENU*/
+.fullmenu{
+	text-align: center;
+	margin-top: 350px;
+}
+.fullmenu h1{ /*menu header*/
+	color: brown;
+	text-decoration: underline;
+}
+.fullmenu table{
+	border-collapse: collapse; /*table border look*/
+	border: 10px white solid;
+}
+.fullmenu th{ /*table heading style*/
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	background-color: black;
+	border: 1px black solid;
+	padding: 15px
+}
+.fullmenu tr td{ /*table cell style*/
+	color: white;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 20px;
+	border: 1px black solid;
+	padding: 20px 60px 20px 60px;
+}
+.fullmenu tr:nth-child(even){ /*style even rows*/
+	background: #8B4513;
+}
+.fullmenu tr:nth-child(odd){ /*style even rows*/
+	background: #A0522D;
+}
+
+#return{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	padding: 15px;
+	border: 1px black solid;
+	border-radius: 10px;
+}
+#return:hover{
+	background: grey;
+}
+
+/*SEARCH BAR FORM*/
+#search-header{
+	color: #FF8C00;
+	font-size: 35px;
+}
+#search-button{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	border: 1px green solid;
+	border-radius: 5px;
+	margin-top: 12px;
+	margin-left: 5px;
+}
+#search-button:hover{
+	color: grey;
+}
+#textinput{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	width: 50%;
+	height: 30px;
+	text-align: center;
+}
